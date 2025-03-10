@@ -5,8 +5,8 @@
 - [x] Java: trabalhando com listas e coleções de dados ✅ 2025-02-19
 - [x] Java: consumindo API, gravando arquivos e lidando com erros ✅ 2025-03-06
 - [x] Spring Boot 3: desenvolva uma API Rest em Java ✅ 2025-03-06
-- [ ] Spring Boot 3: aplique boas práticas e proteja uma API Rest
-- [ ] Spring Boot 3: documente, teste e prepare uma API para o deploy
+- [x] Spring Boot 3: aplique boas práticas e proteja uma API Rest ✅ 2025-03-06
+- [x] Spring Boot 3: documente, teste e prepare uma API para o deploy ✅ 2025-03-06
 - [ ] Java e refatoração: melhorando códigos com boas práticas
 - [ ] Boas práticas de programação: melhore o código de uma API Java
 - [ ] Boas práticas de programação: automatizando testes com Java

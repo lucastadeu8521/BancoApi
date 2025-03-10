@@ -1,0 +1,9 @@
+- DTO
+- Paginacao
+- ordenacao
+- Trello 
+- Mapping notations Spring JPA
+- **_Mass Assignment Attack_**
+- PUT ou PATCH?
+- ResponseEntity
+- UriComponentsBuilder
