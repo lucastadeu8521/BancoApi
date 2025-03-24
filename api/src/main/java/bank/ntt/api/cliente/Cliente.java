@@ -24,9 +24,6 @@ public class Cliente {
     private String email;
     private String cpf;
     private String telefone;
-    private String login;
-    private String senha;
-    private double saldo;
 
     @Embedded
     private Endereco endereco;
@@ -36,14 +33,11 @@ public class Cliente {
 
     public Cliente(DadosCadastroCliente dados) {
         this.ativo = true;
-        this.saldo = 0;
         this.nome = dados.nome();
         this.email = dados.email();
         this.cpf = dados.cpf();
         this.endereco = new Endereco(dados.endereco());
         this.telefone = dados.telefone();
-        this.login = dados.login();
-        this.senha = dados.senha();
     }
 
     public void atualizarInformacoes(@Valid DadosAtualizacaoCliente dados) {
@@ -60,18 +54,5 @@ public class Cliente {
 
     public void excluir() {
         this.ativo = false;
-    }
-
-    public void saque(@Valid DadosAtualizacaoConta dados){
-        if (dados.valor() >= this.saldo && dados.ativo()) {
-            this.saldo = this.saldo - dados.valor();
-        }
-    }
-
-    public void deposito(@Valid DadosAtualizacaoConta dados) {
-
-        if (dados.valor() > 0 && dados.ativo()){
-            this.saldo = this.saldo + dados.valor();
-        }
     }
 }

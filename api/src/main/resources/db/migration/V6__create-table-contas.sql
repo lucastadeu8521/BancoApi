@@ -1,0 +1,11 @@
+CREATE TABLE contas(
+    id BIGINT NOT NULL AUTO_INCREMENT,
+    login VARCHAR(15) NOT NULL UNIQUE,
+    senha VARCHAR(15) NOT NULL,
+    saldo DECIMAL(10,2) DEFAULT 0 NOT NULL,
+    ativo BOOLEAN DEFAULT TRUE NOT NULL,
+    cliente_id BIGINT NOT NULL,
+
+    PRIMARY KEY(id),
+    FOREIGN KEY (cliente_id) REFERENCES clientes(id)
+);

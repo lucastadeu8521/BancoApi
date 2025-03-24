@@ -11,7 +11,5 @@ public record DadosCadastroCliente(
         @Email String email,
         @NotBlank String telefone,
         @NotBlank String cpf,
-        @NotNull @Valid DadosEndereco endereco,
-        @NotNull String login,
-        @NotNull String  senha
+        @NotNull @Valid DadosEndereco endereco
 ){}

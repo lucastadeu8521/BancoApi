@@ -62,7 +62,7 @@ public class ClienteController {
         var cliente = repository.getReferenceById(id);
         return ResponseEntity.ok(new DadosDetalhamentoCliente(cliente));
     }
-
+    /*
     @PutMapping("/saque")
     @Transactional
     public ResponseEntity saque(@RequestBody @Valid DadosAtualizacaoConta dados){
@@ -88,6 +88,7 @@ public class ClienteController {
 
         return ResponseEntity.ok(page);
     }
+    */
 }
 
 

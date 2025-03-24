@@ -1,8 +1,8 @@
 package bank.ntt.api.cliente;
 
-public record DadosListagemCliente(Long id, String nome, String email, String login, double saldo) {
+public record DadosListagemCliente(Long id, String nome, String email) {
 
     public DadosListagemCliente (Cliente cliente){
-        this(cliente.getId(), cliente.getNome(), cliente.getEmail(), cliente.getLogin(), cliente.getSaldo());
+        this(cliente.getId(), cliente.getNome(), cliente.getEmail());
     }
 }
