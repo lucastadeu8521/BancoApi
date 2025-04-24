@@ -1,0 +1,9 @@
+CREATE TABLE transacoes (
+    transacaoID BIGINT AUTO_INCREMENT PRIMARY KEY,
+    contaID BIGINT NOT NULL,
+    data_transacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    tipo_transacao VARCHAR(20) NOT NULL,
+    value DECIMAL(20,2) NOT NULL,
+
+    FOREIGN KEY (contaID) REFERENCES contas(contaID) ON DELETE CASCADE
+);
